@@ -1,0 +1,63 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Splash Screen Container */
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #4CAF50, #66BB6A);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Main Heading */
+.splash-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Subheading */
+.splash-container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .splash-container h1 {
+    font-size: 2rem;
+  }
+
+  .splash-container p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Additional Accessibility Improvements */
+.splash-container:focus {
+  outline: none;
+}

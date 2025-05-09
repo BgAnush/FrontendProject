@@ -1,0 +1,153 @@
+/* Global reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body styles */
+  body {
+    background: linear-gradient(135deg, #FFEB3B, #FF9800);
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Main container */
+  .zs-dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Title of the Dashboard */
+  .zs-dashboard-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Common card style for sections */
+  .dashboard-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Crop Recommendations Card */
+  .crop-recommendations-card {
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+  }
+  
+  .crop-recommendations-card h2 {
+    color: white;
+  }
+  
+  .view-more-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #1e5d25;
+  }
+  
+  /* Weather Info Card */
+  .weather-info-card {
+    background: linear-gradient(135deg, #1e88e5, #00bcd4);
+    color: white;
+  }
+  
+  .weather-info-card h2 {
+    color: white;
+  }
+  
+  .temperature {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff5722;
+  }
+  
+  .refresh-weather-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .refresh-weather-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Marketplace Card */
+  .marketplace-card {
+    background: linear-gradient(135deg, #8e24aa, #7b1fa2);
+    color: white;
+  }
+  
+  .marketplace-card h2 {
+    color: white;
+  }
+  
+  .view-marketplace-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #7b1fa2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-marketplace-btn:hover {
+    background-color: #6a1b9a;
+  }
+  
+  /* Responsive for mobile devices */
+  @media (max-width: 480px) {
+    .dashboard-card {
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .view-more-btn,
+    .refresh-weather-btn,
+    .view-marketplace-btn {
+      width: 100%;
+    }
+  }
+  

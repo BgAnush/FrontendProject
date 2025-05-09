@@ -1,0 +1,96 @@
+/* Home.css */
+
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #9ae4b4, #83c31d);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  padding: 30px 25px;
+  width: 280px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #84e429, #f1f8e9);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #1b5e20;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Logout Button Styling */
+.logout-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  background-color: #e74c3c; /* Red color for logout */
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
